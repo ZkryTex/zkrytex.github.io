@@ -9,7 +9,7 @@ body {
     min-height: 100vh;
   }
   header {
-    background-image : url(header.png);
+    background-image : url(archivos/header.png);
     background-size: cover;
     background-position: center;
     background-color: #3b0a35;
@@ -51,7 +51,7 @@ body {
     width: 60%;
     height:630px;
     background-color:#3b0a35;
-    background-image: url(contactoF.png);
+    background-image: url(archivos/contactoF.png);
     background-position: center;
     background-size: 100%;
     margin: 20px;
@@ -67,7 +67,7 @@ body {
     width: 35%;
     float: left;
     background-color: #3b0a35;
-    background-image: url(fondoS.png);
+    background-image: url(archivos/fondoS.png);
     background-position: center;
     margin: 20px;
     border-radius: 50px;
@@ -93,7 +93,7 @@ body {
     background-color:#3b0a35;
     color: #fff;
     text-align: center;
-    background-image : url(footer.png);
+    background-image : url(archivos/footer.png);
     background-size: cover;
     background-position: center;
   }
