@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto ZERO</title>
+  <link rel="stylesheet" href="contacto.css">
+  <link rel="icon" href="icono.png" type="image/x-icon">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<img src="ZeroLogo.png" alt="Logo">
+		</div>
+	</header>
+	<div class="flexbox">
+  <div class="principal">
+   
+  </div>
+  <div class="secundario">
+        <h2>Comentarios o dudas</h2>
+        <p>Para volver al inicio, click <a href="index.html">acá.</a></p><br><br><br>
+         <div class="consultas">
+         <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="f771ff25-43d4-4f5d-af17-95f9c85b76c5"> 
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required>
+            <br><br>
+
+            <label for="correo">Correo:</label><br>
+            <input type="email" id="correo" name="correo" required>
+            <br><br>
+
+            <label for="comentario">Comentario:</label><br>
+            <textarea id="comentario" name="comentario" rows="4" required></textarea>
+            <br><br>
+
+            <button type="submit">Enviar</button>
+         </form>
+         </div>
+    </div>
+	</div>
+</body>
+<footer>
+    <div class="bot">
+        <img src="https://static.wikia.nocookie.net/katana-zero/images/2/2b/ZeroBike.gif/revision/latest?cb=20190726170524">
+    </div>
+</footer>
+</html>

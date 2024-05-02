@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  header {
+    background-image : url(header.png);
+    background-size: cover;
+    background-position: center;
+    background-color: #3b0a35;
+    color: #fff;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+  }
+  img {
+    width: 250px;
+    height: auto;
+    margin: 0 auto;
+  }
+  nav a {
+    color: #fff;
+    text-decoration: line;
+    font-weight: bold;
+  }
+  .secundario a{
+    color:white;
+  }
+  .secundario a:hover {
+    color: #D300F7;
+}
+.flexbox{
+  display: flex;
+  flex-direction: row-reverse;
+  text-align: center;
+}
+.flex-item{
+  background-color: #3b0a35;
+  width: 100%;
+}
+  .principal {
+    display: inline-block;
+    width: 60%;
+    height:630px;
+    background-color:#3b0a35;
+    background-image: url(contactoF.png);
+    background-position: center;
+    background-size: 100%;
+    margin: 20px;
+    border-radius: 50px;
+  }
+  .principal img {
+    width: 400px;
+    margin: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .secundario {
+    width: 35%;
+    float: left;
+    background-color: #3b0a35;
+    background-image: url(fondoS.png);
+    background-position: center;
+    margin: 20px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    color: white;
+  }
+  .consultas {
+    color: white;
+    display: flex;
+    text-align: middle;
+    height: auto;
+    flex-direction: column;
+  }
+  .input {
+    background-color: #D300F7;
+  }
+  footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color:#3b0a35;
+    color: #fff;
+    text-align: center;
+    background-image : url(footer.png);
+    background-size: cover;
+    background-position: center;
+  }
+  .bot{
+    margin-bottom:5px;
+    margin-top: 5px;
+  }
+  .bot img {
+    height: 32px;
+    width: auto;
+  }
