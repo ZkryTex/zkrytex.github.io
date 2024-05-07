@@ -61,7 +61,7 @@ body {
     background-color:#3b0a35;
     background-image: url(archivos/soundtracksF.png);
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     margin: 20px;
     border-radius: 50px;
     color: white;
@@ -78,6 +78,7 @@ body {
     background-color: #3b0a35;
     background-image: url(archivos/fondoS.png);
     background-position: center;
+    background-size: cover;
     margin: 20px;
     border-radius: 50px;
     display: flex;
