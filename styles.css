@@ -68,7 +68,8 @@
     height:630px;
     background-color:#3b0a35;
     background-image: url(archivos/indexF.png);
-    background-size: 100%;
+    background-size: cover;
+    background-position: center;
     margin: 20px;
     border-radius: 50px;
   }
@@ -84,6 +85,7 @@
     background-color: #3b0a35;
     background-image: url(archivos/fondoS.png);
     background-position: center;
+    background-size: cover;
     margin: 20px;
     border-radius: 50px;
     display: flex;
