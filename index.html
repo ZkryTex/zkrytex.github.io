@@ -6,6 +6,9 @@
   <title>Proyecto ZERO</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="archivos/icono.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
 </head>
 <body>
 	<header>
@@ -15,19 +18,19 @@
 	</header>
 	<div class="flexbox">
   <div class="principal">
-   
+	<video src="archivos/trailer.mp4" width="640" height="360" controls autoplay muted>
+	  </video>
   </div>
   <div class="secundario">
 	<nav>
 		<ul>
-			<h2><li class="info">¿Dónde jugar?</li></h2>
-			<h3><p>Katana ZERO es un juego de pago, se puede comprar en un sitio oficial entrando en el siguiente <a href="https://store.steampowered.com/app/460950/Katana_ZERO/">enlace.</a><br><br></p></h3>
-			<h2><li class="info">Soundtracks</li></h2>
-			<h3><p>Katana ZERO cuenta con mucha música que podemos escuchar mientras avanzamos en el juego,
-				si estás interesado en escucharla podés hacerlo entrando en el siguiente <a href="soundtracks.html">enlace.</a><br><br></p></h3>
-			<h2><li class="info">Contacto</li></h2>
-			<h3><p>Por cualquier consulta podés enviarme un mensaje <a href="contacto.html">acá.</a></p></h3>
-		</ul>
+			<h2><li><button onclick="window.open('https://store.steampowered.com/app/460950/Katana_ZERO/', '_blank')"><span>¿Dónde comprar?</span></button></li></h2>
+			<h3><p>Katana ZERO puede jugarse en plataformas como Windows, Nintendo Switch, Xbox y mac OS/MacOS.<br><br></p></h3>
+			<h2><li><button onclick="window.location.href='soundtracks.html'"><span>Soundtracks</span></button></li></h2>
+			<h3><p>Katana ZERO cuenta con música que el protagonista va escuchando mediante avanzamos en el juego.<br><br></p></h3>
+			<h2><li><button onclick="window.location.href='contacto.html'"><span>Contacto</span></button></li></h2>
+			<h3><p>Para alguna mención o consulta.</p></h3>
+		  </ul>
 	</nav>
 </div>
 	</div>

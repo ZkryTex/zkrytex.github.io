@@ -6,6 +6,9 @@
   <title>Proyecto ZERO</title>
   <link rel="stylesheet" href="contacto.css">
   <link rel="icon" href="archivos/icono.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
 </head>
 <body>
 	<header>
@@ -13,33 +16,35 @@
 			<img src="archivos/ZeroLogo.png" alt="Logo">
 		</div>
 	</header>
-	<div class="flexbox">
-  <div class="principal">
+	
+  <div class="flexbox">
+  
+    <div class="principal">
    
   </div>
   <div class="secundario">
-        <h2>Comentarios o dudas</h2>
-        <p>Para volver al inicio, click <a href="index.html">acá.</a></p><br><br><br>
+        <p>Para volver al inicio, <a href="index.html">click acá.</a></p><br><br>
+  <div class="caja">
+        <h1>Comentarios o dudas</h1>
          <div class="consultas">
-         <form action="https://api.web3forms.com/submit" method="POST">
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <div class="inputs">
             <input type="hidden" name="access_key" value="f771ff25-43d4-4f5d-af17-95f9c85b76c5"> 
-            <label for="nombre">Nombre:</label><br>
-            <input type="text" id="nombre" name="nombre" required>
-            <br><br>
-
-            <label for="correo">Correo:</label><br>
-            <input type="email" id="correo" name="correo" required>
-            <br><br>
-
-            <label for="comentario">Comentario:</label><br>
-            <textarea id="comentario" name="comentario" rows="4" required></textarea>
-            <br><br>
-
-            <button type="submit">Enviar</button>
-         </form>
+            <input name="Nombre" type="text" id="nombre" placeholder="Nombre:" required>
+            <input name="Email" type="email" id="correo" placeholder="Email:" required>
+            <input name="Tema" type="text" id="tema" placeholder="Tema:">
+            </div>
+       <div class="half right cf">
+        <textarea name="Mensaje" type="text" id="input-message" placeholder="Mensaje:" required></textarea>
+       </div>  
+         <button type="submit"><span>Enviar</span></button>
+        </form>
          </div>
+  </div>
     </div>
-	</div>
+	
+  </div>
+
 </body>
 <footer>
     <div class="bot">

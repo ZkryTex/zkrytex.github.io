@@ -15,6 +15,14 @@ body {
     background-color: #3b0a35;
     color: #fff;
   }
+
+  .pixelify-sans {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: auto;
+    font-style: normal;
+  }
+
   .container {
     display: flex;
     justify-content: space-between;

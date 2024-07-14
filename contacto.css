@@ -15,6 +15,14 @@ body {
     background-color: #3b0a35;
     color: #fff;
   }
+
+  .pixelify-sans {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: auto;
+    font-style: normal;
+  }
+
   .container {
     display: flex;
     justify-content: space-between;
@@ -73,20 +81,149 @@ body {
     margin: 20px;
     border-radius: 50px;
     display: flex;
-    flex-direction: column;
     flex: 1;
+    align-items: center;
+    flex-direction: column;
     color: white;
+    font-family: "Pixelify Sans";
   }
+
+  .secundario p{
+    padding-top: 10px;
+    font-size: 18px;
+  }
+
+  .secundario .caja{
+    background-image: linear-gradient(
+      900deg,
+      #3a215e,
+      #2e1b4e
+      );
+  border-radius: 6px;
+  padding: 8px;
+  }
+
+  h1 {
+    border-radius: 6px;
+    padding:6px 12px;
+    background-color: #20152a;
+
+  }
+
   .consultas {
     color: white;
     display: flex;
     text-align: middle;
     height: auto;
     flex-direction: column;
+    background-image: linear-gradient(
+    0deg,
+    #110a1b,
+    #311746
+    );
+    padding:15px;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
   }
-  .input {
-    background-color: #D300F7;
+
+.inputs {
+  background-image: linear-gradient(
+    900deg,
+    #431f66,
+    #23104b
+    );
+padding: 10px;
+border-radius: 6px;
+
+}
+
+  .inputs input{
+    background-image: linear-gradient(
+      50deg,
+      #501fa0,
+      #5d14a1
+      );
+    color:#f0ebff;
+    font-size: 18px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    
   }
+
+ ::placeholder{
+  color:rgb(245, 236, 250)
+ }
+
+  .consultas label {
+    background-color: #3b0a35;
+  }
+
+.secundario input {
+  border: 0;
+  outline: 0;
+  padding: 6px;
+  display: flex;
+  margin: 16px;
+  border-radius: 6px;
+  font-family: "Pixelify Sans";
+  color:white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+textarea {
+  background-image: linear-gradient(
+    50deg,
+    #501fa0,
+    #5d14a1
+    );
+  margin: 10px;
+  border-radius: 6px;
+  border: solid 6px rgb(43, 23, 96);
+  padding:6px;
+  resize: none;
+  font-family: "Pixelify Sans";
+  font-size: 16px;
+  outline:0;
+  color:rgb(245, 236, 250);
+  text-align: center;
+  margin-top: 20px;
+
+}
+.secundario button {
+  border: 0;
+  background-image: linear-gradient(
+    125deg,
+    #370964,
+    #cb83ee,
+    #3d0c68
+    );
+    border-radius: 6px;
+    color:#f3c9f1;
+    display: center;
+    font-size:15px;
+    cursor:pointer;
+    padding: 8px 4px
+    
+}
+
+button span{
+  background-color: #3b0a35;
+  padding: 5px 5px;
+  border-radius:6px;
+  transition: 0,5s;
+  font-family: "Pixelify Sans";
+  font-weight: 400;
+}
+
+button:hover span{
+  background: none;
+  color:#0d0339;
+}
+  
   footer {
     position: fixed;
     width: 100%;
