@@ -57,6 +57,7 @@ body {
   display: flex;
   flex-direction: row-reverse;
   text-align: center;
+  height: 714px;
 }
 .flex-item{
   background-color: #3b0a35;
@@ -65,7 +66,6 @@ body {
   .principal {
     display: inline-block;
     width: 60%;
-    height:630px;
     background-color:#3b0a35;
     background-image: url(archivos/soundtracksF.png);
     background-position: center;
@@ -97,15 +97,15 @@ body {
     margin: 10px;
   }
   footer {
-    position: fixed;
     width: 100%;
-    bottom: 0;
     background-color:#3b0a35;
     color: #fff;
     text-align: center;
     background-image : url(archivos/footer.png);
     background-size: cover;
     background-position: center;
+    display:flex;
+    flex-direction: column;
   }
   .bot{
     margin-bottom:5px;
@@ -114,4 +114,7 @@ body {
   .bot img {
     height: 32px;
     width: auto;
+  }
+  .bot img:hover {
+    cursor: pointer;
   }
