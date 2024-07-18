@@ -8,6 +8,12 @@ body {
     flex-direction: column;
     min-height: 100vh;
   }
+  .pixelify-sans {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: auto;
+    font-style: normal;
+  }
   header {
     background-image : url(archivos/header.png);
     background-size: cover;
@@ -29,30 +35,16 @@ body {
     align-items: center;
     padding: 5px;
   }
-  img {
+  .container img {
     width: 250px;
     height: auto;
     margin: 0 auto;
+    transition: transform 0.2s;
   }
-  nav ul {
-    color:#fff;
-    list-style-position: inside;
-    text-align: center;
-    margin-bottom: 10px;
-    list-style-type: none;
-    padding: 0;
+  .container img:hover{
+    cursor: pointer;
+    transform: scale(1.05);
   }
-  nav p{
-    text-align: center;
-  }
-  nav a {
-    color: #fff;
-    text-decoration: line;
-    font-weight: bold;
-  }
-  nav a:hover {
-    color: #D300F7;
-}
 .flexbox{
   display: flex;
   flex-direction: row-reverse;
@@ -73,13 +65,139 @@ body {
     margin: 20px;
     border-radius: 50px;
     color: white;
+    font-family: "Pixelify Sans";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .principal img {
-    width: 400px;
+    width: 100px;
     margin: 10px;
-    padding-top: 50px;
-    padding-bottom: 50px;
   }
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 6px solid #1d050b;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    900deg,
+    #650c30,
+    #250713
+    );
+    margin-inline: 10%;
+    margin-bottom:0px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  font-family: "Pixelify Sans";
+  background-image: linear-gradient(
+    900deg,
+    #3c1424,
+    #8a0a3d
+    );
+  float: center;
+  border: 4px solid #2a020c;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  margin-inline: 20px;
+  margin: 6px;
+  font-size: 150%;
+  color: #ffe8f1;
+  transition: transform 0.1s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-image: linear-gradient(
+    900deg,
+    #2e0616,
+    #bb2963,
+    #470a23
+    );
+    transform: scale(1.1);
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-image: linear-gradient(
+    900deg,
+    #280310,
+    #641333
+    );
+    color: transparent;
+    transform: scale(0.9);
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 6px solid #1D050B;
+  border-top: none;
+  background-image: linear-gradient(
+    900deg,
+    #7b1b42,
+    #3a0118
+    );
+    margin-inline: 25%;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+ background-color: #2A020C;
+  margin: 8px;
+  padding: 8px;
+  border: 2px solid #2e0916;
+  border-radius: 6px;
+  color: #fff1f7;
+}
+
+.tabcontent img {
+  width: 34%;
+  padding: 6px;
+  background-color: #1D050B;
+  border-radius: 6px;
+}
+
+audio {
+  background-color: #1D050B;
+  margin: 8px;
+  padding: 8px;
+  border-radius: 50px;
+}
+
+/*Estilos para el audio */
+audio::-webkit-media-controls-panel{
+  background-image: linear-gradient(
+    0deg,
+    #380f19,
+    #5f2131,
+    #360a15
+  );
+}
+audio::-webkit-media-controls-current-time-display{
+  color:white;
+}
+audio::-webkit-media-controls-time-remaining-display{
+  color:white;
+}
+audio::-webkit-media-controls-timeline {
+  color: white;
+}
+audio::-webkit-media-controls-play-button {
+  background-color: #7b203d;
+  border-radius: 50%;
+}
+
+audio::-webkit-media-controls-play-button:hover {
+  background-color: rgba(214, 56, 91, 0.7);
+}
+
   .secundario {
     width: 35%;
     float: left;
@@ -92,6 +210,8 @@ body {
     display: flex;
     flex-direction: column;
     flex: 1;
+    font-family: "Pixelify Sans";
+    color: white;
   }
   .secundario p {
     margin: 10px;

@@ -29,10 +29,15 @@ body {
     align-items: center;
     padding: 5px;
   }
-  img {
+  .container img {
     width: 250px;
     height: auto;
     margin: 0 auto;
+    transition: transform 0.2s;
+  }
+  .container img:hover{
+    cursor: pointer;
+    transform: scale(1.05);
   }
   nav a {
     color: #fff;
@@ -198,11 +203,11 @@ textarea {
   background-image: linear-gradient(
     125deg,
     #370964,
-    #cb83ee,
+    #8861f3,
     #3d0c68
     );
     border-radius: 6px;
-    color:#f3c9f1;
+    color:rgb(245, 236, 250);
     display: center;
     font-size:15px;
     cursor:pointer;
@@ -213,7 +218,7 @@ button:hover{
   transform: scale(1.1);
 }
 button span{
-  background-color: #3b0a35;
+  background-color:#2B1760;
   padding: 5px 5px;
   border-radius:6px;
   transition: 0,5s;

@@ -13,21 +13,49 @@
 <body>
 	<header>
 		<div class="container">
-			<img src="archivos/ZeroLogo.png" alt="Logo">
+			<img src="archivos/ZeroLogo.png" onclick="window.location.href='index.html'" alt="Logo">
 		</div>
 	</header>
 	<div class="flexbox">
   <div class="principal">
-    <h2>Acá va a haber una lista de canciones para reproducir y un link para escucharlas todas.</h2>
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'Sneaky Driver')" id="defaultOpen">Sneaky Driver</button>
+      <button class="tablinks" onclick="openCity(event, 'Third District')">Third District</button>
+      <button class="tablinks" onclick="openCity(event, 'Chinatown')">Chinatown</button>
+      <button class="tablinks" onclick="openCity(event, 'Hit The Floor')">Hit The Floor</button>
+    </div>
+    
+    <!-- Tab content -->
+    <div id="Sneaky Driver" class="tabcontent">
+      <h1>Sneaky Driver</h1>
+      <img src="soundtracks/driver.jpg">
+      <audio controls onplay="pauseOthers(this);" src="soundtracks/sneaky-driver.mp3"></audio>
+    </div>
+    
+    <div id="Third District" class="tabcontent">
+      <h1>Third District</h1>
+      <img src="soundtracks/third.jpg">
+      <audio controls onplay="pauseOthers(this);" src="soundtracks/third-district.mp3"></audio>
+    </div>
+    
+    <div id="Chinatown" class="tabcontent">
+      <h1>Chinatown</h1>
+      <img src="soundtracks/chinatown.png">
+      <audio controls onplay="pauseOthers(this);" src="soundtracks/chinatown.mp3"></audio>
+    </div>
+
+    <div id="Hit The Floor" class="tabcontent">
+      <h1>Hit The Floor</h1>
+      <img src="soundtracks/floor.jpg">
+      <audio controls onplay="pauseOthers(this);" src="soundtracks/hit-the-floor.mp3"></audio>
+    </div>
+
   </div>
   <div class="secundario">
-	  <nav>
-		  <ul>
          <h2>En desarrollo... para volver hacé click <a href="index.html">acá.</a></h2>
-		  </ul>
-	  </nav>
-</div>
+ </div> 
 	</div>
+  <script src="script.js"></script>
 </body>
 <footer>
     <div class="bot">
